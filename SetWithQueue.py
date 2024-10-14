@@ -1,7 +1,7 @@
 class FilaArray:
     def __init__(self):
         self.queue = []
-   
+    
     def enqueue(self, item):
         self.queue.append(item)
 
@@ -38,7 +38,7 @@ class SetWithQueue:
             
     def remove (self, elemento):
         if elemento not in self.elementos:
-            raise ValueError("Elemento não encontrado")
+            raise ValueError("Element not found")
         else:
             tempQueue = FilaArray()
             while not self.queue.isEmpty():
